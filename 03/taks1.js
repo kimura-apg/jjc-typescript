@@ -17,4 +17,12 @@ console.log(
 );
 // 結果：[1, 2, 3, 4, 5]
 
-// aa
+function removeDupulication2(array) {
+  const result = new Set(array);
+
+  return Array.from(result);
+}
+
+console.log(
+  removeDupulication2([1, 1, 1, 1, 2, 3, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5])
+);
