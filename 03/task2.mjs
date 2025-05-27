@@ -1,12 +1,14 @@
-function reverseString1(string) {
+export function reverseString1(string) {
   //   const splitString = string.split("");
   //   const reversArray = splitString.reverse();
   //   const result = reversArray.join("");
 
   console.log(string.split("").reverse().join(""));
+
+  return string.split("").reverse().join("");
 }
 
-function reverseString2(str) {
+export function reverseString2(str) {
   if (str === "") {
     return "";
   } else {
