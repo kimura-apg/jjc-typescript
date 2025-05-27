@@ -1,5 +1,5 @@
 //文字列を逆順にする関数
-function Func(string) {
+export function ReverseString(string) {
   //文字列を配列に変換
   const splitString = string.split("");
   //配列を反転
@@ -11,4 +11,4 @@ function Func(string) {
 }
 
 //引数で文字列を入れて関数を呼び出し
-console.log(Func("hello"));
+console.log(ReverseString("hello"));
