@@ -6,6 +6,9 @@ class SomethingClass {
     this.updateWinNumbers();
   }
 
+  /**
+   * あたりの値を更新する関数
+   */
   updateWinNumbers() {
     const winCount = Math.round(this.MAX_RANDOM * this.config.winProbability);
     const actualProbability = winCount / SomethingClass.MAX_RANDOM;
@@ -83,7 +86,9 @@ class SomethingClass {
       count: winNumbers.length,
       distribution:
         winNumbers.length > 0
-          ? `均等分散配置 (間隔: ${Math.floor(SomethingClass.MAX_RANDOM / winNumbers.length)})`
+          ? `均等分散配置 (間隔: ${Math.floor(
+              SomethingClass.MAX_RANDOM / winNumbers.length
+            )})`
           : "なし",
       actualProbability: actualProb,
       theoreticalProbability: this.config.winProbability,
